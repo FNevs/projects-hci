@@ -321,7 +321,7 @@ function Sidebar({ view, setView, activeTags, toggleTag, fileCounts, tagCounts }
       <div style={{ marginTop: 'auto', paddingTop: 16, borderTop: '1px solid var(--line-soft)' }}>
         <div style={{ display: 'flex', flexDirection: 'column', gap: 6, padding: '0 8px' }}>
           <div style={{ fontSize: 11, color: 'var(--ink-3)', fontFamily: 'var(--font-mono)' }}>
-            ✦ projeto IHC · 2024
+            ✦ projeto IHC · 2026
           </div>
           <div style={{ fontSize: 11, color: 'var(--ink-3)' }}>
             <a href="storyboard.html" style={{ color: 'var(--accent-terra)', textDecoration: 'none', fontWeight: 500 }}>
