@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8"/>
+  <title>Sêmea · Projeto IHC</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..600,30..100;1,9..144,300..600,30..100&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="styles.css"/>
+  <style>
+    .hub-bar {
+      display: flex; align-items: center; gap: 14px;
+      padding: 0 8px; margin-bottom: 4px;
+    }
+    .hub-pill {
+      font-family: var(--font-mono); font-size: 11px;
+      letter-spacing: 0.06em; text-transform: uppercase;
+      padding: 5px 10px; border-radius: 999px;
+      background: var(--bg-card); border: 1px solid var(--line);
+      color: var(--ink-2);
+    }
+    .hub-card .arrow {
+      margin-top: auto; font-family: var(--font-mono);
+      font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase;
+      color: var(--accent-terra); display: flex; align-items: center; gap: 6px;
+    }
+    .pre-tl {
+      position: absolute; inset: 0; padding: 16px;
+      display: flex; flex-direction: column; gap: 10px;
+    }
+    .pre-row {
+      display: flex; align-items: center; gap: 8px;
+    }
+    .pre-time {
+      font-family: var(--font-mono); font-size: 9px; font-weight: 600;
+      color: var(--ink-2); width: 50px;
+    }
+    .pre-name {
+      font-family: var(--font-display); font-size: 11px; font-style: italic;
+      color: var(--ink-2); font-variation-settings: '"SOFT" 100';
+    }
+    .pre-grid {
+      display: grid; grid-template-columns: repeat(7, 1fr); gap: 6px;
+      margin-left: 50px;
+    }
+    .pre-cell {
+      aspect-ratio: 4/3; border-radius: 4px; overflow: hidden;
+      border: 1px solid var(--line-soft); position: relative;
+      background: var(--bg-chip);
+    }
+  </style>
+</head>
+<body>
+  <div class="hub">
+    <div class="hub-bar">
+      <span class="hub-pill">✦ projeto IHC · 2024</span>
+      <span class="hub-pill">média/alta fidelidade</span>
+      <span class="hub-pill" style="margin-left: auto;">português · BR</span>
+    </div>
+    <div class="hub-head">
+      <div class="display">
+        <em>Sêmea</em><br/>
+        <span style="color: var(--ink-2); font-size: 0.55em; letter-spacing: -0.01em;">um explorador semântico e contextual de arquivos.</span>
+      </div>
+      <div class="meta">
+        timeline · auto-tagging · busca semântica<br/>
+        sem pastas. sem hierarquia. com contexto.
+      </div>
+    </div>
+
+    <div class="hub-cards">
+      <a class="hub-card" href="prototipo.html" style="grid-row: span 2;">
+        <div class="label">Entrega 02 · Protótipo</div>
+        <h2>Protótipo <em>vivo</em></h2>
+        <p>Timeline cronológica com sessões de atividade, busca semântica em linguagem natural, painel lateral com auto-tagging por IA, e gestão de tags em um clique. Inclui controles de densidade da timeline.</p>
+        <div class="hub-preview">
+          <!-- mini timeline preview -->
+          <div class="pre-tl">
+            <div class="pre-row">
+              <span style="font-family: var(--font-display); font-size: 18px; font-weight: 400;">Hoje</span>
+              <span style="font-family: var(--font-mono); font-size: 9px; color: var(--ink-3);">seg · 20 mai</span>
+            </div>
+            <div class="pre-row">
+              <span class="pre-time">14h–17h</span>
+              <span class="pre-name">Sessão de Pesquisa</span>
+            </div>
+            <div class="pre-grid" id="pre-grid-1"></div>
+          </div>
+        </div>
+        <div class="arrow">abrir protótipo →</div>
+      </a>
+
+      <a class="hub-card" href="storyboard.html">
+        <div class="label">Entrega 01 · Storyboard</div>
+        <h2>3 cenários, <em>9 quadros</em></h2>
+        <p>Roteiros visuais para os três cenários cotidianos — comprovante perdido, pesquisa acadêmica e exames médicos.</p>
+        <div class="arrow">ver storyboard →</div>
+      </a>
+
+      <div class="hub-card" style="background: var(--ink-1); color: var(--bg-app); cursor: default;">
+        <div class="label" style="color: var(--accent-clay);">A direção</div>
+        <h2 style="color: var(--bg-app);"><em>Calmo,</em> orgânico, contextual</h2>
+        <p style="color: oklch(0.85 0.02 80);">Cantos generosos, fonte serifa Fraunces para títulos, paleta terracota + musgo + céu, sombras macias. O explorador deve <em>respirar</em>.</p>
+        <div style="display: flex; gap: 8px; margin-top: auto;">
+          <span style="width: 28px; height: 28px; border-radius: 50%; background: var(--accent-terra);"></span>
+          <span style="width: 28px; height: 28px; border-radius: 50%; background: var(--accent-moss);"></span>
+          <span style="width: 28px; height: 28px; border-radius: 50%; background: var(--accent-sky);"></span>
+          <span style="width: 28px; height: 28px; border-radius: 50%; background: var(--accent-clay);"></span>
+          <span style="width: 28px; height: 28px; border-radius: 50%; background: var(--accent-rose);"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+  <script type="text/babel" src="icons.jsx"></script>
+  <script type="text/babel" src="thumbnails.jsx"></script>
+  <script type="text/babel" src="data.jsx"></script>
+  <script type="text/babel" data-presets="react">
+    const previewItems = [
+      { kind: 'doc', title: 'Norman', accent: 'var(--accent-sky)' },
+      { kind: 'doc', title: 'Nielsen', accent: 'var(--accent-sky)' },
+      { kind: 'chart', kind2: 'line' },
+      { kind: 'chart', kind2: 'bar' },
+      { kind: 'doc', title: 'Card Sort', accent: 'var(--accent-sky)' },
+      { kind: 'doc', title: 'Affordances', accent: 'var(--accent-sky)' },
+      { kind: 'note', headline: 'aula 8' },
+    ];
+    const grid = document.getElementById('pre-grid-1');
+    previewItems.forEach((thumb) => {
+      const div = document.createElement('div');
+      div.className = 'pre-cell';
+      grid.appendChild(div);
+      ReactDOM.createRoot(div).render(<window.FileThumb file={{ thumb }}/>);
+    });
+  </script>
+</body>
+</html>
