@@ -591,7 +591,7 @@ function StoryboardPage() {
         {
           title: 'A busca natural',
           art: <ArtSearchFocus value="comprovante luz maio" />,
-          text: <>No <strong>Sêmea</strong>, ela abre uma única barra ampla — sem pastas, sem hierarquia. Digita do jeito que pensa: <em>"comprovante luz maio"</em>.</>
+          text: <>No <strong>Explorador Semântico</strong>, ela abre uma única barra ampla — sem pastas, sem hierarquia. Digita do jeito que pensa: <em>"comprovante luz maio"</em>.</>
         },
         {
           title: 'A mágica do OCR',
